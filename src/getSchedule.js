@@ -4,4 +4,5 @@ function getSchedule(scheduleTarget) {
   // seu código aqui
 }
 
+
 module.exports = getSchedule;
