@@ -3,7 +3,7 @@ const { species } = require('../data/zoo_data');
 
 const countAnimals = (animal) => {
   // seu código aqui
-  if (animal === undefined) {
+  if (!animal) {
     const result = {};
     species.filter((specie) => {
       const newObject = { [specie.name]: specie.residents.length };
