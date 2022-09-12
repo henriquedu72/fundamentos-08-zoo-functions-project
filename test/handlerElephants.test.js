@@ -20,5 +20,7 @@ describe('Testes da função HandlerElephants', () => {
   it('Testa se ao receber average retonra a media de idade', () => {
     expect(handlerElephants('averageAge')).toEqual(10.5);
   });
-//   it('', () => {});
+  it('Testa se ao receber algo diferente de string retorna Parâmetro inválido, é necessário uma string', () => {
+    expect(handlerElephants(0)).toEqual('Parâmetro inválido, é necessário uma string');
+  });
 });
