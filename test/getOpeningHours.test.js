@@ -14,7 +14,7 @@ describe('Testes da função getOpeningHours', () => {
       Friday: { open: 10, close: 8 },
       Saturday: { open: 8, close: 10 },
       Sunday: { open: 8, close: 8 },
-      Monday: { open: 0, close: 0 }
+      Monday: { open: 0, close: 0 },
     };
     expect(actual).toEqual(arrayEmpty);
   });
