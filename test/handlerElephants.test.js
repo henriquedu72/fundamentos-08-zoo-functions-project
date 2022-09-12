@@ -18,10 +18,13 @@ describe('Testes da função HandlerElephants', () => {
     const arrayNames = ['Ilana', 'Orval', 'Bea', 'Jefferson'];
     expect(handlerElephants('names')).toEqual(arrayNames);
   });
-  it('Testa se ao receber average retonra a media de idade', () => {
+  it('Testa se ao receber averageAge retonra a media de idade', () => {
     expect(handlerElephants('averageAge')).toEqual(10.5);
   });
   it('Testa se ao receber algo diferente de string retorna Parâmetro inválido, é necessário uma string', () => {
     expect(handlerElephants(0)).toEqual('Parâmetro inválido, é necessário uma string');
+  });
+  it('Testa se ao receber location retorna xxx', () => {
+    expect(handlerElephants('location')).toEqual('NW');
   });
 });
