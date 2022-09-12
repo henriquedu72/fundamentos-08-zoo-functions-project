@@ -35,4 +35,13 @@ describe('Testes da função getOpeningHours', () => {
   it('se a função retorna The abbreviation must be caso receba monday e 09:00-ZM ', () => {
     expect(typeof getOpeningHours('monday', '09:00-ZM')).toThrow('The abbreviation must be \'AM\' or \'PM\'');
   });
+  it('Se a função retorna The hour should represent a number caso receba Saturday e C9:00-AM', () => {
+    expect(getOpeningHours('Saturday', 'C9:00-AM')).toThrow('The hour should represent a number');
+  });
+  it('Se a função retorna The minutes should represent a number caso receba Sunday e 09:c0-AM', () => {
+    expect(getOpeningHours('Sunday', '09:c0-AM')).toThrow('The minutes should represent a number');
+  });
+  // it('', () => {
+  //   expect().toThrow();
+  // });
 });
