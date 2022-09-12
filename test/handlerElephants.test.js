@@ -14,9 +14,10 @@ describe('Testes da função HandlerElephants', () => {
   it('Testa se ao receber count retonra a quantidade de residentes', () => {
     expect(handlerElephants('count')).toEqual(4);
   });
-  //   it('Testa se ao receber names retonra um array com os nomes', () => {
-  //     const arrayNames = [ 'Ilana', 'Orval', 'Bea', 'Jefferson' ];
-  //     expect(handlerElephants('names')).toEqual('arrayNames');
+  it('Testa se ao receber names retonra um array com os nomes', () => {
+    const arrayNames = ['Ilana', 'Orval', 'Bea', 'Jefferson'];
+    expect(handlerElephants('names')).toEqual(arrayNames);
+  });
   it('Testa se ao receber average retonra a media de idade', () => {
     expect(handlerElephants('averageAge')).toEqual(10.5);
   });
